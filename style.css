@@ -1,0 +1,41 @@
+/* Global Styles */
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Nav */
+
+header {
+  background-color: #555555;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+
+.container {
+  height: 100vh;
+  width: 70%;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+}
