@@ -1,6 +1,6 @@
-/* Global Styles */
+/* Global */
+
 * {
-  position: relative;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,34 +8,91 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Sunflower", sans-serif;
 }
 
-/* Nav */
+h2 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+p,
+table {
+  font-size: 2rem;
+}
+
+/* Header */
 
 header {
-  background-color: #555555;
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: row;
-  flex-wrap: wrap;
+  background-color: #222222;
 }
 
-body {
-  background-color: #222222;
+nav {
+  min-height: 10vh;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
   align-items: center;
-  flex-flow: column;
-  flex-wrap: wrap;
 }
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: rgb(214, 132, 9);
+  flex: 1 1 40rem;
+}
+
+/* Body */
 
 .container {
-  height: 100vh;
-  width: 70%;
-  background-color: pink;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: flex-start;
+  align-items: center;
+  background-color: #444444;
+  min-height: 90vh;
+}
+
+section {
+  margin: 2rem;
+  padding: 3rem;
+  width: 70%;
+  background-color: #aaaaaa;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border: 1px solid #444444;
+}
+
+td,
+th {
+  border: 1px solid #444444;
+}
+
+/* Media */
+
+@media screen and (max-width: 950px) {
+  nav {
+    text-align: center;
+  }
+  h1 {
+    padding: 1rem;
+  }
 }
