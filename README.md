@@ -16,6 +16,7 @@ My first mini project of a tribute page for Vinous-throated parrotbill(뱁새) t
 - Initial : Aug 28 2020
 ### Add CSS
 - consider using Bootstrap, Sass
+- Initial : Aug 29 2020
 ### Built with
 - HTML/CSS
 ## Adding an option to change languages.
