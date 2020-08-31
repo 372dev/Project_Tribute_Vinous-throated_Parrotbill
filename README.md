@@ -1,5 +1,5 @@
 # Tribute_Vinous-throated_Parrotbill
-The first mini project of a tribute page for Vinous-throated parrotbill(뱁새)
+My first mini project of a tribute page for Vinous-throated parrotbill(뱁새) to practice HTML/CSS and optional Javascript
 ## Getting started
 ### Collect articles & photos
 ---
