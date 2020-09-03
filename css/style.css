@@ -1,0 +1,192 @@
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Sunflower", sans-serif;
+}
+
+h2 {
+  font-size: 3.2rem;
+  padding: 0 0 2rem 1.5rem;
+}
+
+li,
+button,
+label,
+p,
+table {
+  font-size: 2rem;
+}
+
+/* Header */
+
+header {
+  background-color: #222222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+}
+
+nav {
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexOne {
+  flex: 1;
+}
+
+.flexTwo {
+  flex: 1;
+}
+
+h1 a {
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: rgb(214, 132, 9);
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: rgb(214, 132, 9);
+}
+
+/* Body */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #444444;
+}
+
+section {
+  margin: 2rem;
+  padding: 3rem;
+  width: 70%;
+  background-color: #aaaaaa;
+  border-radius: 15px;
+}
+
+section:nth-child(1) {
+  padding-top: 0rem;
+}
+
+div .table {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border: 1px solid #444444;
+  text-align: center;
+}
+
+td,
+th {
+  border: 1px solid #444444;
+}
+
+.mainImg {
+  width: 100%;
+  padding: 2rem 0rem;
+}
+
+/* Media */
+
+@media screen and (max-width: 800px) {
+  section {
+    width: 95%;
+    border-radius: 10px;
+  }
+
+  h1 a {
+    text-decoration: none;
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: rgb(214, 132, 9);
+  }
+  h2 {
+    font-size: 3.2rem;
+    padding: 0 0 2rem 1.5rem;
+  }
+  li,
+  button,
+  label,
+  p,
+  table {
+    font-size: 1.5rem;
+  }
+  .flexOne {
+    flex: 3;
+  }
+  .flexTwo {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    background: #222222;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 4rem;
+  }
+
+  .flexTwo li a {
+    font-size: 3rem;
+  }
+
+  .flexThree {
+    flex: 1;
+  }
+
+  .burger span {
+    padding: 0.2rem 0.2rem;
+    background: #aaaaaa;
+    margin: 0.5rem 0rem;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  section {
+    width: 70%;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  section {
+    width: 50%;
+    border-radius: 15px;
+  }
+}
