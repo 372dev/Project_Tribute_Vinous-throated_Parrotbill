@@ -146,9 +146,6 @@ th {
   table {
     font-size: 1.5rem;
   }
-  .flexOne {
-    flex: 3;
-  }
   .flexTwo {
     position: fixed;
     width: 100%;
@@ -161,12 +158,34 @@ th {
     padding: 4rem;
   }
 
-  .flexTwo li a {
-    font-size: 3rem;
+  .burger {
+    position: absolute;
+    top: 30%;
+    right: 8%;
+    transform: translate(5%, 0%);
+    width: 3rem;
+    height: 3rem;
+    z-index: 1;
   }
 
-  .flexThree {
-    flex: 1;
+  .menu-check {
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    right: 8%;
+    transform: translate(5%, 0%);
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    opacity: 10;
+  }
+
+  .menu-check:checked .flexTwo {
+    transform: translate(5%, 0%);
+  }
+
+  .flexTwo li a {
+    font-size: 3rem;
   }
 
   .burger span {
@@ -177,10 +196,14 @@ th {
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 801px) {
   section {
     width: 70%;
     border-radius: 15px;
+  }
+  .menu-check,
+  .burger {
+    display: none;
   }
 }
 
