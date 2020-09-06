@@ -146,17 +146,6 @@ th {
   table {
     font-size: 1.5rem;
   }
-  .flexTwo {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 100%;
-    background: #222222;
-    flex-direction: column;
-    align-content: space-around;
-    padding: 4rem;
-  }
 
   .burger {
     position: absolute;
@@ -168,6 +157,33 @@ th {
     z-index: 1;
   }
 
+  .flexTwo {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    background: #222222;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 4rem;
+    transition: transform 0.5s ease;
+  }
+
+  .menu-check:checked + .flexTwo {
+    transform: translate(-100%);
+  }
+
+  .menu-check:checked ~ .flexThree span:nth-child(1) {
+    transform: rotateZ(45deg) translateY(300%);
+  }
+  .menu-check:checked ~ .flexThree span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-check:checked ~ .flexThree span:nth-child(3) {
+    transform: rotateZ(-45deg) translateY(-300%);
+  }
+
   .menu-check {
     z-index: 2;
     position: absolute;
@@ -177,11 +193,7 @@ th {
     width: 3rem;
     height: 3rem;
     cursor: pointer;
-    opacity: 10;
-  }
-
-  .menu-check:checked .flexTwo {
-    transform: translate(5%, 0%);
+    opacity: 0;
   }
 
   .flexTwo li a {
