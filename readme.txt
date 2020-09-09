@@ -1,5 +1,3 @@
-The page is now deployed. Check out https://372project01.netlify.app
-
 이미지/글 출처 - Source and photo references
 
 nygode.tistory.com

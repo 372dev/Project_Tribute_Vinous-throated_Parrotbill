@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-top: 10vh;
+}
+
 html {
   font-size: 62.5%;
   font-family: "Sunflower", sans-serif;
@@ -122,6 +126,7 @@ section:nth-child(1) {
 }
 
 div .table {
+  padding: 4rem 0 2rem 0;
   display: flex;
   justify-content: center;
 }
