@@ -17,11 +17,14 @@ h2 {
 }
 
 li,
-button,
 label,
 p,
 table {
   font-size: 2rem;
+}
+
+button {
+  font-size: 1.5rem;
 }
 
 /* Header */
@@ -79,6 +82,24 @@ nav a:hover {
   color: rgb(214, 132, 9);
 }
 
+button {
+  background-color: #444444;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.KOR {
+  display: block;
+}
+
+.ENG {
+  display: none;
+}
+
 /* Body */
 
 .container {
@@ -120,9 +141,13 @@ th {
   padding: 2rem 0rem;
 }
 
+.copy {
+  width: 10rem;
+}
+
 /* Media */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   section {
     width: 95%;
     border-radius: 10px;
@@ -140,7 +165,6 @@ th {
     padding: 0 0 2rem 1.5rem;
   }
   li,
-  button,
   label,
   p,
   table {
@@ -170,30 +194,18 @@ th {
     transition: transform 0.5s ease;
   }
 
-  .menu-check:checked + .flexTwo {
+  .nav-open {
     transform: translate(-100%);
   }
 
-  .menu-check:checked ~ .flexThree span:nth-child(1) {
+  .toggle-menu .line1 {
     transform: rotateZ(45deg) translateY(300%);
   }
-  .menu-check:checked ~ .flexThree span:nth-child(2) {
+  .toggle-menu .line2 {
     opacity: 0;
   }
-  .menu-check:checked ~ .flexThree span:nth-child(3) {
+  .toggle-menu .line3 {
     transform: rotateZ(-45deg) translateY(-300%);
-  }
-
-  .menu-check {
-    z-index: 2;
-    position: absolute;
-    top: 30%;
-    right: 8%;
-    transform: translate(5%, 0%);
-    width: 3rem;
-    height: 3rem;
-    cursor: pointer;
-    opacity: 0;
   }
 
   .flexTwo li a {
@@ -208,7 +220,7 @@ th {
   }
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 1001px) {
   section {
     width: 70%;
     border-radius: 15px;
@@ -219,7 +231,7 @@ th {
   }
 }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1481px) {
   section {
     width: 50%;
     border-radius: 15px;
