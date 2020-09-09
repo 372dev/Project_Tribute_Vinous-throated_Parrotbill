@@ -1,5 +1,8 @@
 # Tribute_Vinous-throated_Parrotbill
 My first mini project of a tribute page for Vinous-throated parrotbill(뱁새) to practice HTML/CSS and optional Javascript
+deployed on Sept. 9. 2020
+https://372project01.netlify.app/
+
 ## Getting started
 ### Collect articles & photos
 ---
