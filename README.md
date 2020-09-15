@@ -3,6 +3,9 @@ My first mini project of a tribute page for Vinous-throated parrotbill(뱁새) t
 deployed on Sept. 9. 2020
 https://372project01.netlify.app/
 
+## Model
+- build and fix
+
 ## Getting started
 ### Collect articles & photos
 ---
